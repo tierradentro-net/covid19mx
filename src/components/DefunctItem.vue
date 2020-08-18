@@ -87,20 +87,6 @@ import Municipios from '../assets/data/municipios.json';
 				var Municipio = Municipios.filter(municipio => municipio.CLAVE_MUNICIPIO == this.defunct.MUNICIPIO_RES && municipio.CLAVE_ENTIDAD == this.defunct.ENTIDAD_NAC);
 				this.Municipio = Municipio[0].MUNICIPIO;
 				console.log(Municipio[0].MUNICIPIO)
-				/*switch (this.defunct.ENTIDAD_NAC) {
-					case 1:
-						this.Estado = "Aguascalientes";
-						break;
-					case 2:
-						this.Estado = "Baja California";
-						break;
-					case 15:
-						this.Estado = "Estado de México";
-						break;
-					default:
-						this.Estado = "No especificado";
-						break;
-				}*/
 				//EMBARAZADA: 1=SI => false=no esconder, 2=NO => true=esconder
 				this.Embarazada = this.defunct.EMBARAZO == 1 ? false : true;
 				//HABLANTE
