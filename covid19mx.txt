@@ -1,0 +1,12 @@
+
+
+awk -F ','  '{ if ($13 != "\"9999-99-99\"")  print }' 200813COVID19MEXICO.csv > def.csv 
+
+jq
+https://github.com/stedolan/jq/wiki/Installation#windows-using-appveyor
+
+https://stackoverflow.com/questions/44780761/converting-csv-to-json-in-bash
+
+https://www.convertcsv.com/csv-to-json.htm
+
+
